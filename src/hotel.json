@@ -1,0 +1,279 @@
+[
+  {
+    "id": 1,
+    "name": "Inizio",
+    "location": "Laureles-Estadio, Medellin",
+    "country": "Colombia",
+    "state": "Antioquia",
+    "city": "Medellin",
+    "contact": {
+      "prefix": 12,
+      "phone": 2123213,
+      "web": "https://www.hotelinizio.com"
+    },
+    "rooms": [
+      {
+        "beds": ["1 double bed", "1 large double bed"],
+        "price_day": 308400,
+        "squares": 15,
+        "description": ["garden view", "Air conditioning", "patio", "Flat-screen TV", "Terrace", "Free WiFi"],
+        "number_of_guest": 2,
+        "total_rooms": 2,
+        "rooms": {
+          "1": {
+            "status": "available",
+            "reservations": []
+          },
+          "2": {
+            "status": "available",
+            "reservations": [ {
+              "userInfo": "Bob Johnson",
+              "from": "2024-04-12T12:00:00Z",
+              "to": "2024-04-18T12:00:00Z"
+            }
+            ]
+          }
+        }
+      }
+    ]
+  },{
+  "id": 2,
+  "name": "Gran Colombia",
+  "location": "Chapinero, Bogotá",
+  "country": "Colombia",
+  "state": "Bogotá D.C.",
+  "city": "Bogotá",
+  "contact": {
+    "prefix": 12,
+    "phone": 2123213,
+    "web": "https://www.grancolombiahotel.com"
+  },
+  "rooms": [
+    {
+      "beds": ["2 single beds"],
+      "price_day": 200000,
+      "squares": 20,
+      "description": ["City view", "Air conditioning", "Mini-bar", "Flat-screen TV", "Free WiFi"],
+      "number_of_guest": 2,
+      "total_rooms": 3,
+      "rooms": {
+        "1": {
+          "status": "inavailable",
+          "reservations": []
+        },
+        "2": {
+          "status": "available",
+          "reservations": [{
+            "userInfo": "John Doe",
+            "from": "2024-04-05T12:00:00Z",
+            "to": "2024-04-10T12:00:00Z"
+          }
+          ]
+        },
+        "3": {
+          "status": "available",
+          "reservations": []
+        }
+      }
+    }
+  ]
+},
+  {
+    "id": 3,
+    "name": "Cali Comfort",
+    "location": "Granada, Cali",
+    "country": "Colombia",
+    "state": "Valle del Cauca",
+    "city": "Cali",
+    "contact": {
+      "prefix": 12,
+      "phone": 2123213,
+      "web": "https://www.calicomforthotel.com"
+    },
+    "rooms": [
+      {
+        "beds": ["1 queen bed"],
+        "price_day": 180000,
+        "squares": 18,
+        "description": ["City view", "Air conditioning", "Mini-bar", "Free WiFi"],
+        "number_of_guest": 2,
+        "total_rooms": 2,
+        "rooms": {
+          "1": {
+            "status": "available",
+            "reservations": []
+          },
+          "2": {
+            "status": "available",
+            "reservations": []
+          }
+        }
+      }
+    ]
+  },{
+  "id": 4,
+  "name": "Bucaramanga Hills",
+  "location": "Cabecera del Llano, Bucaramanga",
+  "country": "Colombia",
+  "state": "Santander",
+  "city": "Bucaramanga",
+  "contact": {
+    "prefix": 12,
+    "phone": 2123213,
+    "web": "https://www.bucaramangahills.com"
+  },
+  "rooms": [
+    {
+      "beds": ["2 single beds"],
+      "price_day": 220000,
+      "squares": 25,
+      "description": ["Mountain view", "Air conditioning", "Mini-fridge", "Free WiFi"],
+      "number_of_guest": 2,
+      "total_rooms": 3,
+      "rooms": {
+        "1": {
+          "status": "available",
+          "reservations": [{
+            "userInfo": "John Doe",
+            "from": "2024-04-05T12:00:00Z",
+            "to": "2024-04-10T12:00:00Z"
+          }
+          ]
+        },
+        "2": {
+          "status": "available",
+          "reservations": []
+        },
+        "3": {
+          "status": "available",
+          "reservations": []
+        }
+      }
+    }
+  ]
+}, {
+  "id": 5,
+  "name": "Mar Caribe",
+  "location": "El Laguito, Cartagena",
+  "country": "Colombia",
+  "state": "Bolívar",
+  "city": "Cartagena",
+  "contact": {
+    "prefix": 12,
+    "phone": 2123213,
+    "web": "https://www.marcaribehotel.com"
+  },
+  "rooms": [
+    {
+      "beds": ["2 single beds"],
+      "price_day": 250000,
+      "squares": 22,
+      "description": ["Ocean view", "Air conditioning", "Mini-bar", "Flat-screen TV", "Free WiFi"],
+      "number_of_guest": 2,
+      "total_rooms": 3,
+      "rooms": {
+        "1": {
+          "status": "available",
+          "reservations": []
+        },
+        "2": {
+          "status": "available",
+          "reservations": [
+            {
+              "userInfo": "Alice Smith",
+              "from": "2024-05-01T12:00:00Z",
+              "to": "2024-05-07T12:00:00Z"
+            }
+          ]
+        },
+        "3": {
+          "status": "available",
+          "reservations": []
+        }
+      }
+    }
+  ]
+},
+  {
+    "id": 6,
+    "name": "El Dorado",
+    "location": "La Candelaria, Bogotá",
+    "country": "Colombia",
+    "state": "Bogotá D.C.",
+    "city": "Bogotá",
+    "contact": {
+      "prefix": 12,
+      "phone": 2123213,
+      "web": "https://www.eldoradohotel.com"
+    },
+    "rooms": [
+      {
+        "beds": ["1 king bed", "1 sofa bed"],
+        "price_day": 280000,
+        "squares": 30,
+        "description": ["City view", "Air conditioning", "Mini-bar", "Flat-screen TV", "Free WiFi"],
+        "number_of_guest": 2,
+        "total_rooms": 2,
+        "rooms": {
+          "1": {
+            "status": "available",
+            "reservations": [
+              {
+                "userInfo": "Bob Johnson",
+                "from": "2024-04-12T12:00:00Z",
+                "to": "2024-04-18T12:00:00Z"
+              }
+            ]
+          },
+          "2": {
+            "status": "available",
+            "reservations": []
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "El Paraiso",
+    "location": "La Boquilla, Cartagena",
+    "country": "Colombia",
+    "state": "Bolívar",
+    "city": "Cartagena",
+    "contact": {
+      "prefix": 12,
+      "phone": 2123213,
+      "web": "https://www.elparaisohotel.com"
+    },
+    "rooms": [
+      {
+        "beds": ["1 queen bed", "1 single bed"],
+        "price_day": 180000,
+        "squares": 20,
+        "description": ["Pool view", "Air conditioning", "Mini-fridge", "Flat-screen TV", "Free WiFi"],
+        "number_of_guest": 2,
+        "total_rooms": 3,
+        "rooms": {
+          "1": {
+            "status": "available",
+            "reservations": []
+          },
+          "2": {
+            "status": "available",
+            "reservations": []
+          },
+          "3": {
+            "status": "available",
+            "reservations": [
+              {
+                "userInfo": "Emma White",
+                "from": "2024-06-01T12:00:00Z",
+                "to": "2024-06-07T12:00:00Z"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]
