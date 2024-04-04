@@ -1,6 +1,5 @@
 package Hotel;
 
-
 public class ContactInfo {
     private int prefix;
     private int phone;
