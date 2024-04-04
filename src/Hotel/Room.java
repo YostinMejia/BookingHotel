@@ -54,6 +54,7 @@ public class Room {
                 return true;
             }
         }
+        System.out.println("Fecha reservada");
         return false;
     }
 }

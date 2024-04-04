@@ -15,21 +15,22 @@ public class Main {
         Hotel[] hotels = Parser.parseJson(filePath);
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ingrese su nombre: ");
-        String nombre = scanner.nextLine();
+
 
         try {
             int opcion;
             do {
                 System.out.println("Menu:");
-                System.out.println("1. Ver hoteles disponibles");
+                System.out.println("1. Ver hoteles disponibles para reservar");
                 System.out.println("2. Cancelar reservación");
+                System.out.println("3. Ver todos los hoteles ");
                 System.out.println("4. Salir");
                 System.out.print("Seleccione una opción: ");
                 opcion = scanner.nextInt();
 
                 switch (opcion) {
                     case 1:
+
 
                         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
@@ -56,7 +57,9 @@ public class Main {
 
                                     System.out.println("Ingrese el tipo de habitación que desea reservar:");
                                     String typeRoom = scanner.next();
-
+                                    scanner.nextLine();
+                                    System.out.print("Ingrese su nombre: ");
+                                    String nombre = scanner.nextLine();
                                     reservation(hotel, typeRoom, nombre, from, to);
                                     Parser.saveToJson(filePath, hotels);
                                     break;
@@ -72,21 +75,21 @@ public class Main {
                         int hotel_id = scanner.nextInt();
                         scanner.nextLine(); // Consumir el carácter de nueva línea
 
-// Leer type_room
                         System.out.print("Ingrese el tipo de habitación: ");
                         String type_room = scanner.nextLine();
 
-// Leer room_id
                         System.out.print("Ingrese el ID de la habitación: ");
                         String room_id = scanner.nextLine();
 
-// Leer reservation_id
                         System.out.print("Ingrese el ID de la reserva: ");
                         int reservation_id = scanner.nextInt();
                         scanner.nextLine(); // Consumir el carácter de nueva línea después del número entero
                         cancelateReserve(hotels, hotel_id, type_room, room_id, reservation_id);
                         Parser.saveToJson(filePath, hotels);
-                        System.out.println("Saliendo del programa...");
+                        break;
+                    case 3:
+                        Arrays.stream(hotels)
+                                .forEach(hotel -> hotel.printHotel());
                         break;
                     case 4:
                         System.out.println("Saliendo del programa...");
